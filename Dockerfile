@@ -7,7 +7,13 @@ RUN pacman -Syu --noconfirm && pacman -S --noconfirm \
     mingw-w64-headers \
     mingw-w64-winpthreads \
     git \
-    wget
+    wget \
+    perl \
+    zip \
+    unzip \
+    npm \
+    cmake
+
 ENV mingwurl=https://github.com/Studio-Link/mingw/releases/download/v20.03.0
 RUN wget $mingwurl/mingw-w64-configure-0.1.1-9-any.pkg.tar.xz \
          $mingwurl/mingw-w64-environment-1-2-any.pkg.tar.xz \
