@@ -8,6 +8,6 @@ RUN pacman -Syu --noconfirm && pacman -S --noconfirm \
     mingw-w64-winpthreads \
     git
 
-ADD entrypoint.sh
+ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["entrypoint.sh"]
 CMD ["build"]
