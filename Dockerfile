@@ -9,5 +9,5 @@ RUN pacman -Syu --noconfirm && pacman -S --noconfirm \
     git
 
 ADD entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
 CMD ["build"]
