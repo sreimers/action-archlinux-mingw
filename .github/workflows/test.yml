@@ -11,4 +11,4 @@ jobs:
 
     - uses: sreimers/action-archlinux-mingw@main
       with:
-        build_cmd: "uname -a; pacman -Ql | grep mingw"
+        run: "ls -lha"
