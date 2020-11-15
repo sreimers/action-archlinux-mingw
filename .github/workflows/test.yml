@@ -9,6 +9,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - uses: sreimers/action-archlinux-mingw@master
+    - uses: sreimers/action-archlinux-mingw
       with:
         build_cmd: "uname -a; pacman -Ql | grep mingw"
