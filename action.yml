@@ -1,0 +1,13 @@
+name: mingw64 build env on archlinux
+description: mingw64 build env on archlinux
+author: Sebastian Reimers <hallo@studio-link.de>
+
+inputs:
+  build_cmd:
+    required: true
+
+runs:
+    using: docker
+    image: Dockerfile
+    env:
+        BUILD_CMD: ${{ inputs.build_cmd }}
