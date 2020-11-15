@@ -11,4 +11,4 @@ jobs:
 
     - uses: sreimers/action-archlinux-mingw@main
       with:
-        run: "ls -lha"
+        run: "/usr/bin/i686-w64-mingw32-cc --version"
