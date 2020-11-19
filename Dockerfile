@@ -13,7 +13,7 @@ RUN pacman -Syu --noconfirm && pacman -S --noconfirm \
     unzip \
     npm \
     cmake \
-    which
+    base-devel
 
 ENV mingwurl=https://github.com/Studio-Link/mingw/releases/download/v20.03.0
 RUN wget $mingwurl/mingw-w64-configure-0.1.1-9-any.pkg.tar.xz \
